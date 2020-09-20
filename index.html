@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+        <body style="background-color:#ff69b3;">
+
+                <h1>Raspberry Pi 7-Segment Clock</h1>
+
+                <h2>Configuration Settings</h2>
+
+                <b>How To Use</b><br>
+                Only change the values that you want to update and click "Submit".
+                Options left blank will <i>not</i> be updated.<br>
+                <br>
+
+                <form action="/config.php" method="post">
+
+                        <b>Hour Format:</b>
+                        <br>
+                        <input type="radio" name="hour_format" value="12"> 12<br>
+                        <input type="radio" name="hour_format" value="24"> 24<br>
+                        <br>
+
+                        <b>Dimmer Type:</b>
+                        <br>
+                        <input type="radio" name="dimmer_type" value="0"> 0 - Off<br>
+                        <input type="radio" name="dimmer_type" value="1"> 1 - Basic<br>
+                        <input type="radio" name="dimmer_type" value="2"> 2 - Digital Light Sensor<br>
+                        <br>
+
+                        <b>Screen Brightness</b>
+                        <br>
+                        <i>0.0 = Dimmest<br>
+                        1.0 = Brightest<br></i>
+                        <input type="number" name="dimmer_min" min="0.0" max="1.0" step="0.1"> Minimum Brightness<br>
+                        <input type="number" name="dimmer_max" min="0.0" max="1.0" step="0.1"> Maximum Brightness<br>
+                        <br>
+
+                        <b>Display Colon:</b>
+                        <br>
+                        <input type="radio" name="display_colon" value="True"> Yes<br>
+                        <input type="radio" name="display_colon" value="False"> No<br>
+                        <br>
+
+                        <input type="submit" value="Submit"><br>
+
+                </form>
+
+                <br><br>
+
+
+                <a href="/sysopt.html" method="post">system options</a>
+                <br>
+
+        </body>
+</html>

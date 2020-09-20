@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+        <body style="background-color:#ff69b3;">
+
+                <h1>Raspberry Pi 7-Segment Clock</h1>
+
+                <form action="/index.html" method="post">
+                        <input type="submit" value="<<< Go Back">
+                </form>
+
+
+                <h2>System Options</h2>
+                <li>Pick any ONE option below and confirm the selection.<br>
+                <li>If multiple options are chosen, only the first (from the top) will be applied.<br>
+                <br>
+
+                <form action="/sysopt.php" method="post">
+
+                        <b>System Operations</b>
+                        <br>
+                        <input type="radio" name="sys_opt" value="reboot">Reboot Clock<br>
+                        <input type="radio" name="sys_opt" value="shut_down">Shut Down Clock<br>
+                        <br>
+
+                        <b>Web Configuration</b><br>
+                        Clock uses configuration settings from web page:
+                        <br>
+                        <input type="radio" name="web_config" value="True">Yes (default)<br>
+                        <input type="radio" name="web_config" value="False">No (uses config in script only)<br>
+                        <br>
+
+                        <b>Web Interface</b><br>
+                        <font color=#610c04>**warning**</font><br>
+                        If selected, this web interface will be disabled and all configuration
+                        must take place via the python scripts until you restart this daemon.
+                        <br>
+                        <input type="radio" name="web_interface" value="disable">Disable Web Interface<br>
+                        <br>
+
+                        <b>Confirmation</b>
+                        <br>
+                        <i>I confirm that the System Option I have selected is what I want.</i><br>
+                        <input type="radio" name="confirm" value="True" required>Yes<br>
+                        <br>
+
+                        <input type="submit" value="Submit"><br>
+
+                </form>
+
+
+        </body>
+</html>
