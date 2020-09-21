@@ -7,14 +7,11 @@
 echo "> Troubleshooting: Step 0"
 echo "root" >> /etc/cron.allow
 
-# Step 0.5: Sleep for 60 seconds to ensure change is picked up
-echo "Pausing to allow cron to pick up changes... hold tight..."
-sleep 60
-echo "Continuing!"
-
 # Step 1: Save all current cronjobs by root in a file
 echo "> Troubleshooting: Step 1"
-crontab -l > /home/pi/rpi-clock/bash/cron_list.txt
+if [ -f /var/spool/cron/crontabs/root ]; then
+	crontab -l > /home/pi/rpi-clock/bash/cron_list.txt
+fi
 
 # Step 2: Add the cron job to the list
 echo "> Troubleshooting: Step 2"
