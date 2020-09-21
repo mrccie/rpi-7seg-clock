@@ -64,6 +64,11 @@ Clone this repository:
 git clone https://github.com/mrccie/rpi-7seg-clock
 ```
 
+Go into the repository directory:
+```sh
+cd rpi-7seg-clock
+```
+
 Use the install script:
 ```sh
 sudo ./install.sh
