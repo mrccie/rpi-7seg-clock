@@ -2,10 +2,10 @@
 Description=7 Segment Display Python3 Script
 
 [Service]
-WorkingDirectory=/home/pi/python/rpi-clock
+WorkingDirectory=/home/pi/rpi-clock/python
 User=pi
 Type=simple
-ExecStart=/usr/bin/python3 -u /home/pi/python/rpi-clock/rpi_7seg.py
+ExecStart=/usr/bin/python3 -u /home/pi/rpi-clock/python/rpi_7seg.py
 
 [Install]
 WantedBy=multi-user.target

@@ -92,8 +92,7 @@ disp_second = 0
 is_am = True
 is_noon = False
 brightness = 0.8
-#webconfig_file = "/var/www/html/7seg_files/webconfig.conf"
-webconfig_file = "/home/pi/python/rpi-clock/webconfig.conf"
+webconfig_file = "/var/www/html/7seg_files/webconfig.conf"
 use_webconfig = True
 
 
