@@ -11,4 +11,4 @@ apt-get install -y python3-pip
 pip3 install adafruit-circuitpython-ht16k33
 
 # Pillow Library
-sudo apt-get install python3-pil
+apt-get install python3-pil
