@@ -30,6 +30,31 @@ Note:
 - Any digital light sensor should work; there's nothing special about the one linked
 
 
+## Raspberry Pi Initialization
+
+If you're installing on a Pi from scratch, you'll need to do a few things first...
+
+Change the password of the user 'pi' if you haven't done so already:
+```sh
+passwd
+```
+
+Update the operating system:
+```sh
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+Set your local timezone:
+```sh
+sudo raspi-config
+> 4 - Localization Options
+>> I2 - Change Time Zone
+>>> Pick accordingly
+>>>> Finish
+```
+
+
 ## Installation: Pre-Requisites and Git
 
 This is just on Git for now.
@@ -38,6 +63,15 @@ Pre-requisites:
 - Raspberry Pi has internet connectivity
 - Terminal access to the Pi (local or via SSH)
 - RECOMMENDED: Configure the Pi with a static IP for web reachability
+
+Enable i2c Interface:
+```sh
+sudo raspi-config
+> 5 - Interfacing Options
+>> P5 - I2C
+>>> Would you like to enable... Yes
+>>>> Finish
+```
 
 Install git:
 ```sh

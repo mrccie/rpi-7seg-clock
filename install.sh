@@ -7,6 +7,7 @@
 apt-get install -y python3
 apt-get install -y python3-pip
 apt-get install -y python3-pil
+apt-get install -y python3-gpiozero
 
 # Apache 2
 apt-get install -y apache2
