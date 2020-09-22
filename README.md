@@ -32,7 +32,11 @@ Note:
 
 ## Raspberry Pi Initialization
 
-If you're installing on a Pi from scratch, you'll need to do a few things first...
+If you're installing on a Pi from scratch, you'll need to do a few things first.
+
+[Steps fto set up a headless RPi](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html)
+
+[You can also set a static IP](https://electrondust.com/2017/11/25/setting-raspberry-pi-wifi-static-ip-raspbian-stretch-lite/)
 
 Change the password of the user 'pi' if you haven't done so already:
 ```sh
