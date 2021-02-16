@@ -34,7 +34,7 @@ Note:
 
 If you're installing on a Pi from scratch, you'll need to do a few things first.
 
-[Steps fto set up a headless RPi](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html)
+[Steps to set up a headless RPi](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html)
 
 [You can also set a static IP](https://www.raspberrypi.org/documentation/configuration/tcpip/).  An example would be to modify the file <b>/etc/dhcpcd.conf</b> to read as follows (for a wireless connection):
 ```sh
@@ -58,8 +58,8 @@ sudo apt-get upgrade
 Set your local timezone:
 ```sh
 sudo raspi-config
-> 4 - Localization Options
->> I2 - Change Time Zone
+> 5 - Localization Options
+>> L2 - Change Time Zone
 >>> Pick accordingly
 >>>> Finish
 ```
