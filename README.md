@@ -77,7 +77,7 @@ Pre-requisites:
 Enable i2c Interface:
 ```sh
 sudo raspi-config
-> 5 - Interfacing Options
+> 3 - Interfacing Options
 >> P5 - I2C
 >>> Would you like to enable... Yes
 >>>> Finish
