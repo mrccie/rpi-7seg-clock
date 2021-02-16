@@ -75,7 +75,6 @@ Pre-requisites:
 - RECOMMENDED: Configure the Pi with a static IP for web reachability
 
 Enable i2c Interface:
---Note: You may receive an error like 'modprobe: FATAL: Module i2c-dev not found in directory /lib/modules/5.4.83+' ; this can be ignored--
 ```sh
 sudo raspi-config
 > 3 - Interfacing Options
@@ -83,6 +82,7 @@ sudo raspi-config
 >>> Would you like to enable... Yes
 >>>> Finish
 ```
+(You may receive an error like 'modprobe: FATAL: Module i2c-dev not found in directory /lib/modules/5.4.83+'; this can be ignored)
 
 Install git:
 ```sh
