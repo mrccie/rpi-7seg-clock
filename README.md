@@ -91,7 +91,7 @@ Install git:
 sudo apt-get install -y git
 ```
 
-Configure git:
+(Optional) Configure git:
 ```sh
 git config --global user.email "<email>"
 git config --global user.name "<username>"
@@ -120,3 +120,8 @@ Use the install script:
 ```sh
 sudo ./install.sh
 ```
+
+
+## What to Do Next?
+
+If you want to customize your clock beyond the default behavior (ie. change brightness scheme, set to 24-hour mode, etc.), open a web browser and navigate to the IP address of your clock.  When using the web interface, please be aware that changes you make may take a minute or so to be picked up.
