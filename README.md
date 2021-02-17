@@ -36,7 +36,9 @@ If you're installing on a Pi from scratch, you'll need to do a few things first.
 
 [Steps to set up a headless RPi](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html)
 
-[You can also set a static IP](https://www.raspberrypi.org/documentation/configuration/tcpip/).  An example would be to modify the file <b>/etc/dhcpcd.conf</b> to read as follows (for a wireless connection):
+(Optional but Recommended Step)
+[You can also set a static IP](https://www.raspberrypi.org/documentation/configuration/tcpip/).  
+An example would be to modify the file <b>/etc/dhcpcd.conf</b> to read as follows (for a wireless connection):
 ```sh
 interface wlan0
 static ip_address=192.168.1.50/24    
