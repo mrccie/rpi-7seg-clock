@@ -55,6 +55,7 @@ cp /home/pi/rpi-clock/setup/www_files/index.html /var/www/html/index.html
 cp /home/pi/rpi-clock/setup/www_files/config.php /var/www/html/config.php
 cp /home/pi/rpi-clock/setup/www_files/sysopt.html /var/www/html/sysopt.html
 cp /home/pi/rpi-clock/setup/www_files/sysopt.php /var/www/html/sysopt.php
+cp /home/pi/rpi-clock/setup/www_files/diagnostic.php /var/www/html/diagnostic.php
 
 # Copy webconfig file
 cp /home/pi/rpi-clock/setup/www_files/webconfig.conf /var/www/html/7seg_files/webconfig.conf
