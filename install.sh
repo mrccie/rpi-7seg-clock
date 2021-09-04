@@ -32,6 +32,7 @@ sudo -u pi mkdir /home/pi/rpi-clock/bash
 sudo -u pi mkdir /home/pi/rpi-clock/python
 sudo -u pi mkdir /home/pi/rpi-clock/setup
 sudo -u pi mkdir /home/pi/rpi-clock/setup/www_files
+sudo -u pi mkdir /home/pi/rpi-clock/log
 
 # Copy files to appropriate places
 sudo -u pi cp ./setup/rpi_7seg.service /home/pi/rpi-clock/setup/
