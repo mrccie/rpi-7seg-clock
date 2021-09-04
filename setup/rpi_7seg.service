@@ -15,7 +15,7 @@ RestartSec=5s
 
 ExecStart=/usr/bin/python3 -u /home/pi/rpi-clock/python/rpi_7seg.py
 
-ExecStartPre=./home/pi/rpi-clock/bash/log-rpi_7seg_starts.sh
+ExecStartPre=/home/pi/rpi-clock/bash/log-rpi_7seg_starts.sh
 
 [Install]
 WantedBy=multi-user.target
