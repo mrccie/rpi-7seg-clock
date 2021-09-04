@@ -1,11 +1,20 @@
 [Unit]
 Description=7 Segment Display Python3 Script
 
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+
 [Service]
 WorkingDirectory=/home/pi/rpi-clock/python
 User=pi
 Type=simple
+
+Restart=on-failure
+RestartSec=5s
+
 ExecStart=/usr/bin/python3 -u /home/pi/rpi-clock/python/rpi_7seg.py
+
 
 [Install]
 WantedBy=multi-user.target
